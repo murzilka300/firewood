@@ -6,6 +6,7 @@
     <title>firewood</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/index.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -540,6 +541,50 @@
             <div class="wrapper">
                 <div class="districts_container">
                     <h2 class="districts_title">Районы без доплаты</h2>
+                    <div class="districts_cards">
+                        <div class="districts_card"><button class="districts_card-button">Антипино</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Березняки</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Боровский</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Букино</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Велижанский тракт 17 км</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Верхний бор</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Войновка</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Воронинские горки</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Горьковка</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Дербыши</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Ембаево</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Зайково</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Казарова</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Кулаково</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Лесобаза</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Луговое</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Мальково</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Метелёво</button></div>
+                        <div class="districts_card"><button class="districts_card-button">ММС</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Московский</button></div>
+                        <div class="districts_card"><button class="districts_card-button">МЫС</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Ожогино</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Падерина</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Патрушева</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Парёнкина</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Решетникова</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Субботина</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Суходолье</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Труфаново</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Тураева</button></div>
+                        <div class="districts_card"><button class="districts_card-button">Яр</button></div>
+                        <div class="districts_card-large"><button class="districts_card-button-large districts_card-button">Не нашли свой район? Спрашивайте</button></div>
+                    </div>
+                    <div id="map"></div>
+                    <script type="text/javascript">
+                        ymaps.ready(init);
+                        function init(){
+                            var myMap = new ymaps.Map("map", {
+                                center: [57.153033, 65.534328], // координаты места
+                                zoom: 7
+                            });
+                        }
+                    </script>
                 </div>
             </div>
         </section>
