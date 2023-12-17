@@ -659,6 +659,10 @@ body {
 
 /* districts start */
 
+.districts {
+    margin-bottom: 86px;
+}
+
 .districts_container {
     margin: 0 120px;
 }
