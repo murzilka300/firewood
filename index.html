@@ -7,38 +7,44 @@
     <link rel="stylesheet" href="/style.css">
     <script src="/index.js" defer></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
         <div class="header_info-container">
             <div class="wrapper">
                 <div class="header_info-block">
-                    <div class="header_logo">
-                        <a href="/" class="logo_link">
-                            <img src="/img/logo.svg" alt="logo" class="logo">
-                        </a>
+                    <div class="header_left">
+                        <div class="header_logo">
+                            <a href="/" class="logo_link">
+                                <img src="/img/logo.svg" alt="logo" class="logo">
+                            </a>
+                        </div>
+                        <div class="header_contacts">
+                            <div class="header_time-block header_time-block-custom">
+                                <div class="time-block">
+                                    <img src="/img/header-time-1.svg" alt="" class="time-block-image">
+                                    <p class="header-block-descr">Ежедневно 9.00-20.00</p>
+                                </div>
+                                <div class="time-block">
+                                    <img src="/img/header-time-2.svg" alt="" class="time-block-image">
+                                    <p class="header-block-descr">Юридическим лицам</p>
+                                </div>
+                            </div>
+                            <div class="header_time-block">
+                                <div class="tel-block">
+                                    <img src="/img/header-number-1.svg" alt="number" class="tel-block-image">
+                                    <a href="tel:+73452606698" class="header-block-descr">+7 (3452) 60-66-98</a>
+                                </div>
+                                <div class="tel-block">
+                                    <img src="/img/header-number-2.svg" alt="number" class="tel-block-image">
+                                    <a href="tel:+79292696698" class="header-block-descr">+7 (929) 269-66-98</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="header_contacts">
-                        <div class="header_time-block">
-                            <div class="time-block">
-                                <img src="/img/header-time-1.svg" alt="" class="time-block-image">
-                                <p class="header-block-descr">Ежедневно 9.00-20.00</p>
-                            </div>
-                            <div class="time-block">
-                                <img src="/img/header-time-2.svg" alt="" class="time-block-image">
-                                <p class="header-block-descr">Юридическим лицам</p>
-                            </div>
-                        </div>
-                        <div class="header_time-block">
-                            <div class="tel-block">
-                                <img src="/img/header-number-1.svg" alt="number" class="tel-block-image">
-                                <a href="tel:+73452606698" class="header-block-descr">+7 (3452) 60-66-98</a>
-                            </div>
-                            <div class="tel-block">
-                                <img src="/img/header-number-2.svg" alt="number" class="tel-block-image">
-                                <a href="tel:+79292696698" class="header-block-descr">+7 (929) 269-66-98</a>
-                            </div>
-                        </div>
                         <div class="header__social_network-block">
                             <a href="!#" class="social_network-block-link">
                                 <img src="/img/header-social-1.svg" alt="viber" class="social_network-block-image">
@@ -65,6 +71,9 @@
                         <li><button class="nav_button">Вопрос/ответ</button></li>
                         <li><button class="nav_button">Контакты</button></li>
                         <li><button class="nav_button">Полезное/Подарок$</button></li>
+                    </ul>
+                    <ul class="nav_container_mobile">
+                        <li><button class="nav_button">Меню сайта</button></li>
                     </ul>
                 </nav>
             </div>
@@ -165,7 +174,7 @@
         </section>
         <section class="calculator">
             <div class="wrapper">
-                <div class="calculator_container">
+                <div class="questions_container">
                     <h2 class="calculator_title">
                         Калькулятор дров
                     </h2>
@@ -222,232 +231,250 @@
         </section>
         <section class="prise">
             <div class="wrapper">
-                <div class="prise_wrapper">
+                <div class="questions_container">
                     <h2 class="prise-title">Цены на дрова</h2>
-            <div class="prise_container">
-                <div class="prise_card">
-                    <h3 class="card_title">Березовые колотые (с доставкой)</h3>
-                    <img src="/img/prise-1.png" alt="" class="card_image">
-                    <div class="card_settings">
-                        <div class="card_settings-left">
-                            <div class="card_setting-block">
-                                <p class="card_setting-blod">2 куб</p>
-                                <p class="card_setting-noblod">с доставкой</p>
-                            </div>
-                            <div class="card_setting-block">
-                                <p class="card_setting-blod">3 куб</p>
-                                <p class="card_setting-noblod">(1 куб 2967р.)</p>
-                            </div>
-                            <div class="card_setting-block">
-                                <p class="card_setting-blod">4 куб</p>
-                                <p class="card_setting-noblod">(1 куб 2925р.)</p>
-                            </div>
-                            <div class="card_setting-block">
-                                <p class="card_setting-blod">5 куб</p>
-                                <p class="card_setting-noblod">(1 куб 2920р.)</p>
-                            </div>
-                            <div class="card_setting-block">
-                                <p class="card_setting-blod">6 куб</p>
-                                <p class="card_setting-noblod">(1 куб 2900р.)</p>
-                            </div>
-                        </div>
-                        <div class="card_settings-right">
-                            <p class="card_settings-prise">6 990 р.</p>
-                            <p class="card_settings-prise">8 900 р.</p>
-                            <p class="card_settings-prise">11 700 р.</p>
-                            <p class="card_settings-prise">11 700 р.</p>
-                            <p class="card_settings-prise">17 400 р.</p>
-                        </div>
-                    </div>
-                    <div class="prise_button-container">
-                        <button class="prise_button">Заказать</button>
-                    </div>
-                </div>
-                <div class="prise_card">
-                    <div class="prise_card-top">
-                        <h3 class="card_title">Дрова, сосна, осина</h3>
-                        <img src="/img/prise-2.png" alt="" class="card_image">
-                        <div class="card_settings">
-                            <div class="card_settings-left">
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">1 пачка</p>
-                                    <p class="card_setting-noblod">самовывоз</p>
-                                </div>
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">6-7 куб</p>
-                                    <p class="card_setting-noblod">доставка</p>
-                                </div>
-                            </div>
-                            <div class="card_settings-right">
-                                <p class="card_settings-prise">349 р.</p>
-                                <p class="card_settings-prise">2 490 р.</p>
-                            </div>
-                        </div>
-                        <p class="prise_card-descr">
-                            Сосновая/осиновая срезка и горбыль, в пачках по ~1.2-1.5 куба, самовывоз или
-                            с доставкой и разгрузкой по 5 пачек в кузове ~6-7 кубов.
+                    <div class="prise_mobil_container">
+                        <p class="prise_mobil_text">
+                            Листай вправо / влево
                         </p>
-                    </div>
-                    <button class="prise_button">Заказать</button>
-                </div>
-                <div class="prise_card">
-                    <div class="prise_card-top">
-                        <h3 class="card_title">Березовые колотые (самовывоз)</h3>
-                        <img src="/img/prise-3.png" alt="" class="card_image">
-                        <div class="card_settings">
-                            <div class="card_settings-left">
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">2 куб</p>
-                                    <p class="card_setting-noblod">с доставкой</p>
-                                </div>
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">3 куб</p>
-                                    <p class="card_setting-noblod">(1 куб 2967р.)</p>
-                                </div>
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">6 куб</p>
-                                    <p class="card_setting-noblod">(1 куб 2925р.)</p>
-                                </div>
-                            </div>
-                            <div class="card_settings-right">
-                                <p class="card_settings-prise">2 490 р.</p>
-                                <p class="card_settings-prise">7 470 р.</p>
-                                <p class="card_settings-prise">14 940 р.</p>
-                            </div>
-                        </div>
-                        <p class="prise_card-descr">
-                            береза + сухая осина
-                        </p>
-                    </div>
-                    <button class="prise_button">Заказать</button>
-                </div>
-                <div class="prise_card">
-                    <div class="prise_card-top">
-                        <h3 class="card_title">Береза + осина колотые</h3>
-                        <img src="/img/prise-4.png" alt="" class="card_image">
-                        <div class="card_settings">
-                            <div class="card_settings-left">
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">3 куб</p>
-                                    <p class="card_setting-noblod">(2+1)</p>
-                                </div>
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">6 куб</p>
-                                    <p class="card_setting-noblod">(4+2)</p>
-                                </div>
-                            </div>
-                            <div class="card_settings-right">
-                                <p class="card_settings-prise">8 500 р.</p>
-                                <p class="card_settings-prise">16 000 р.</p>
-                            </div>
+                        <div class="prise_mobil_block">
+                            <img src="/img/prise-mobil-1.svg" alt="" class="prise_mobil_img-one">
+                            <div class="prise_mobil_position"></div>
+                            <div class="prise_mobil_position"></div>
+                            <div class="prise_mobil_position"></div>
+                            <div class="prise_mobil_position"></div>
+                            <div class="prise_mobil_position"></div>
+                            <div class="prise_mobil_position"></div>
+                            <div class="prise_mobil_position"></div>
+                            <div class="prise_mobil_position"></div>
+                            <div class="prise_mobil_position"></div>
+                            <img src="/img/prise-mobil-2.svg" alt="" class="prise_mobil_img-two">
                         </div>
                     </div>
-                    <button class="prise_button">Заказать</button>
-                </div>
-                <div class="prise_card">
-                    <div class="prise_card-top">
-                        <h3 class="card_title">Берёза разноразмерная</h3>
-                        <img src="/img/prise-5.png" alt="" class="card_image">
-                        <div class="card_settings">
-                            <div class="card_settings-left">
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">2 куб</p>
-                                    <p class="card_setting-noblod">самовывоз</p>
+                    <div class="prise_container">
+                        <div class="prise_card">
+                            <h3 class="card_title">Березовые колотые (с доставкой)</h3>
+                            <img src="/img/prise-1.png" alt="" class="card_image">
+                            <div class="card_settings">
+                                <div class="card_settings-left">
+                                    <div class="card_setting-block">
+                                        <p class="card_setting-blod">2 куб</p>
+                                        <p class="card_setting-noblod">с доставкой</p>
+                                    </div>
+                                    <div class="card_setting-block">
+                                        <p class="card_setting-blod">3 куб</p>
+                                        <p class="card_setting-noblod">(1 куб 2967р.)</p>
+                                    </div>
+                                    <div class="card_setting-block">
+                                        <p class="card_setting-blod">4 куб</p>
+                                        <p class="card_setting-noblod">(1 куб 2925р.)</p>
+                                    </div>
+                                    <div class="card_setting-block">
+                                        <p class="card_setting-blod">5 куб</p>
+                                        <p class="card_setting-noblod">(1 куб 2920р.)</p>
+                                    </div>
+                                    <div class="card_setting-block">
+                                        <p class="card_setting-blod">6 куб</p>
+                                        <p class="card_setting-noblod">(1 куб 2900р.)</p>
+                                    </div>
                                 </div>
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">3.1 куб</p>
-                                    <p class="card_setting-noblod">самовывоз</p>
-                                </div>
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">3.1 куб</p>
-                                    <p class="card_setting-noblod">с доставкой</p>
+                                <div class="card_settings-right">
+                                    <p class="card_settings-prise">6 990 р.</p>
+                                    <p class="card_settings-prise">8 900 р.</p>
+                                    <p class="card_settings-prise">11 700 р.</p>
+                                    <p class="card_settings-prise">11 700 р.</p>
+                                    <p class="card_settings-prise">17 400 р.</p>
                                 </div>
                             </div>
-                            <div class="card_settings-right">
-                                <p class="card_settings-prise">1 650 р.</p>
-                                <p class="card_settings-prise">5 990 р.</p>
-                                <p class="card_settings-prise">6 700 р.</p>
+                            <div class="prise_button-container">
+                                <button class="prise_button">Заказать</button>
                             </div>
                         </div>
-                    </div>
-                    <button class="prise_button">Заказать</button>
-                </div>
-                <div class="prise_card">
-                    <div class="prise_card-top">
-                        <h3 class="card_title">Карандаш березовый</h3>
-                        <img src="/img/prise-6.png" alt="" class="card_image">
-                        <div class="card_settings">
-                            <div class="card_settings-left">
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">1 куб    </p>
-                                    <p class="card_setting-noblod"></p>
+                        <div class="prise_card">
+                            <div class="prise_card-top">
+                                <h3 class="card_title">Дрова, сосна, осина</h3>
+                                <img src="/img/prise-2.png" alt="" class="card_image">
+                                <div class="card_settings">
+                                    <div class="card_settings-left">
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">1 пачка</p>
+                                            <p class="card_setting-noblod">самовывоз</p>
+                                        </div>
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">6-7 куб</p>
+                                            <p class="card_setting-noblod">доставка</p>
+                                        </div>
+                                    </div>
+                                    <div class="card_settings-right">
+                                        <p class="card_settings-prise">349 р.</p>
+                                        <p class="card_settings-prise">2 490 р.</p>
+                                    </div>
+                                </div>
+                                <p class="prise_card-descr">
+                                    Сосновая/осиновая срезка и горбыль, в пачках по ~1.2-1.5 куба, самовывоз или
+                                    с доставкой и разгрузкой по 5 пачек в кузове ~6-7 кубов.
+                                </p>
+                            </div>
+                            <button class="prise_button">Заказать</button>
+                        </div>
+                        <div class="prise_card">
+                            <div class="prise_card-top">
+                                <h3 class="card_title">Березовые колотые (самовывоз)</h3>
+                                <img src="/img/prise-3.png" alt="" class="card_image">
+                                <div class="card_settings">
+                                    <div class="card_settings-left">
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">2 куб</p>
+                                            <p class="card_setting-noblod">с доставкой</p>
+                                        </div>
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">3 куб</p>
+                                            <p class="card_setting-noblod">(1 куб 2967р.)</p>
+                                        </div>
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">6 куб</p>
+                                            <p class="card_setting-noblod">(1 куб 2925р.)</p>
+                                        </div>
+                                    </div>
+                                    <div class="card_settings-right">
+                                        <p class="card_settings-prise">2 490 р.</p>
+                                        <p class="card_settings-prise">7 470 р.</p>
+                                        <p class="card_settings-prise">14 940 р.</p>
+                                    </div>
+                                </div>
+                                <p class="prise_card-descr">
+                                    береза + сухая осина
+                                </p>
+                            </div>
+                            <button class="prise_button">Заказать</button>
+                        </div>
+                        <div class="prise_card">
+                            <div class="prise_card-top">
+                                <h3 class="card_title">Береза + осина колотые</h3>
+                                <img src="/img/prise-4.png" alt="" class="card_image">
+                                <div class="card_settings">
+                                    <div class="card_settings-left">
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">3 куб</p>
+                                            <p class="card_setting-noblod">(2+1)</p>
+                                        </div>
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">6 куб</p>
+                                            <p class="card_setting-noblod">(4+2)</p>
+                                        </div>
+                                    </div>
+                                    <div class="card_settings-right">
+                                        <p class="card_settings-prise">8 500 р.</p>
+                                        <p class="card_settings-prise">16 000 р.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card_settings-right">
-                                <p class="card_settings-prise">2 500 р.</p>
-                            </div>
+                            <button class="prise_button">Заказать</button>
                         </div>
-                        <p class="prise_card-descr">
-                            уже распилен, до 45 см
-                        </p>
-                    </div>
-                    <button class="prise_button">Заказать</button>
-                </div>
-                <div class="prise_card">
-                    <div class="prise_card-top">
-                        <h3 class="card_title">Осиновые колотые</h3>
-                        <img src="/img/prise-7.png" alt="" class="card_image">
-                        <div class="card_settings">
-                            <div class="card_settings-left">
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">1 куб    </p>
-                                    <p class="card_setting-noblod"></p>
+                        <div class="prise_card">
+                            <div class="prise_card-top">
+                                <h3 class="card_title">Берёза разноразмерная</h3>
+                                <img src="/img/prise-5.png" alt="" class="card_image">
+                                <div class="card_settings">
+                                    <div class="card_settings-left">
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">2 куб</p>
+                                            <p class="card_setting-noblod">самовывоз</p>
+                                        </div>
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">3.1 куб</p>
+                                            <p class="card_setting-noblod">самовывоз</p>
+                                        </div>
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">3.1 куб</p>
+                                            <p class="card_setting-noblod">с доставкой</p>
+                                        </div>
+                                    </div>
+                                    <div class="card_settings-right">
+                                        <p class="card_settings-prise">1 650 р.</p>
+                                        <p class="card_settings-prise">5 990 р.</p>
+                                        <p class="card_settings-prise">6 700 р.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card_settings-right">
-                                <p class="card_settings-prise">от 2 390 р.</p>
-                            </div>
+                            <button class="prise_button">Заказать</button>
                         </div>
-                    </div>
-                    <button class="prise_button">Заказать</button>
-                </div>
-                <div class="prise_card">
-                    <div class="prise_card-top">
-                        <h3 class="card_title">Некондиция, комель</h3>
-                        <img src="/img/prise-8.png" alt="" class="card_image">
-                        <div class="card_settings">
-                            <div class="card_settings-left">
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">1 куб    </p>
-                                    <p class="card_setting-noblod"></p>
+                        <div class="prise_card">
+                            <div class="prise_card-top">
+                                <h3 class="card_title">Карандаш березовый</h3>
+                                <img src="/img/prise-6.png" alt="" class="card_image">
+                                <div class="card_settings">
+                                    <div class="card_settings-left">
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">1 куб    </p>
+                                            <p class="card_setting-noblod"></p>
+                                        </div>
+                                    </div>
+                                    <div class="card_settings-right">
+                                        <p class="card_settings-prise">2 500 р.</p>
+                                    </div>
+                                </div>
+                                <p class="prise_card-descr">
+                                    уже распилен, до 45 см
+                                </p>
+                            </div>
+                            <button class="prise_button">Заказать</button>
+                        </div>
+                        <div class="prise_card">
+                            <div class="prise_card-top">
+                                <h3 class="card_title">Осиновые колотые</h3>
+                                <img src="/img/prise-7.png" alt="" class="card_image">
+                                <div class="card_settings">
+                                    <div class="card_settings-left">
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">1 куб    </p>
+                                            <p class="card_setting-noblod"></p>
+                                        </div>
+                                    </div>
+                                    <div class="card_settings-right">
+                                        <p class="card_settings-prise">от 2 390 р.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card_settings-right">
-                                <p class="card_settings-prise">1 490 р.</p>
-                            </div>
+                            <button class="prise_button">Заказать</button>
                         </div>
-                    </div>
-                    <button class="prise_button">Заказать</button>
-                </div>
-                <div class="prise_card">
-                    <div class="prise_card-top">
-                        <h3 class="card_title">Дрова в сетках</h3>
-                        <img src="/img/priseprise-9.png" alt="" class="card_image">
-                        <div class="card_settings">
-                            <div class="card_settings-left">
-                                <div class="card_setting-block">
-                                    <p class="card_setting-blod">от 4 до 13 полений</p>
-                                    <p class="card_setting-noblod"></p>
+                        <div class="prise_card">
+                            <div class="prise_card-top">
+                                <h3 class="card_title">Некондиция, комель</h3>
+                                <img src="/img/prise-8.png" alt="" class="card_image">
+                                <div class="card_settings">
+                                    <div class="card_settings-left">
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">1 куб    </p>
+                                            <p class="card_setting-noblod"></p>
+                                        </div>
+                                    </div>
+                                    <div class="card_settings-right">
+                                        <p class="card_settings-prise">1 490 р.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card_settings-right">
-                                <p class="card_settings-prise">от 69р. до 190 р.</p>
+                            <button class="prise_button">Заказать</button>
+                        </div>
+                        <div class="prise_card">
+                            <div class="prise_card-top">
+                                <h3 class="card_title">Дрова в сетках</h3>
+                                <img src="/img/priseprise-9.png" alt="" class="card_image">
+                                <div class="card_settings">
+                                    <div class="card_settings-left">
+                                        <div class="card_setting-block">
+                                            <p class="card_setting-blod">от 4 до 13 полений</p>
+                                            <p class="card_setting-noblod"></p>
+                                        </div>
+                                    </div>
+                                    <div class="card_settings-right">
+                                        <p class="card_settings-prise">от 69р. до 190 р.</p>
+                                    </div>
+                                </div>
                             </div>
+                            <button class="prise_button">Заказать</button>
                         </div>
                     </div>
-                    <button class="prise_button">Заказать</button>
-                </div>
-            </div>
                 </div>
             </div>
         </section>
@@ -481,7 +508,7 @@
         </section>
         <div class="work">
             <div class="wrapper">
-                <div class="work_container">
+                <div class="questions_container">
                     <h2 class="work_title">Как мы работаем?</h2>
                     <div class="work_video_container">
                         <div class="work_video_block">
@@ -539,14 +566,14 @@
         </section>
         <section class="districts">
             <div class="wrapper">
-                <div class="districts_container">
+                <div class="questions_container">
                     <h2 class="districts_title">Районы без доплаты</h2>
                     <div class="districts_cards">
                         <div class="districts_card"><button class="districts_card-button">Антипино</button></div>
                         <div class="districts_card"><button class="districts_card-button">Березняки</button></div>
                         <div class="districts_card"><button class="districts_card-button">Боровский</button></div>
                         <div class="districts_card"><button class="districts_card-button">Букино</button></div>
-                        <div class="districts_card"><button class="districts_card-button">Велижанский тракт 17 км</button></div>
+                        <div class="districts_card"><button class="districts_card-button districts_card-button-custom">Велижанский тракт 17 км</button></div>
                         <div class="districts_card"><button class="districts_card-button">Верхний бор</button></div>
                         <div class="districts_card"><button class="districts_card-button">Войновка</button></div>
                         <div class="districts_card"><button class="districts_card-button">Воронинские горки</button></div>
@@ -572,7 +599,7 @@
                         <div class="districts_card"><button class="districts_card-button">Суходолье</button></div>
                         <div class="districts_card"><button class="districts_card-button">Труфаново</button></div>
                         <div class="districts_card"><button class="districts_card-button">Тураева</button></div>
-                        <div class="districts_card"><button class="districts_card-button">Яр</button></div>
+                        <div class="districts_card districts_card-mob"><button class="districts_card-button districts_card-button-mob">Яр</button></div>
                         <div class="districts_card-large"><button class="districts_card-button-large districts_card-button">Не нашли свой район? Спрашивайте</button></div>
                     </div>
                     <div id="map"></div>
@@ -590,42 +617,582 @@
         </section>
         <section class="cars">
             <div class="wrapper">
-                <div class="cars_container_one">
-                    <div class="car_card">
-                        <img src="/img/" alt="" class="car_card-image">
-                        <h4 class="car_card-title"></h4>
-                        <p class="car_card-descr"></p>
-                    </div>
-                    <div class="car_card">
-                        <img src="" alt="" class="car_card-image">
-                        <h4 class="car_card-title"></h4>
-                        <p class="car_card-descr"></p>
-                    </div>
-                    <div class="car_card">
-                        <img src="" alt="" class="car_card-image">
-                        <h4 class="car_card-title"></h4>
-                        <p class="car_card-descr"></p>
-                    </div>
-                    <div class="car_card">
-                        <img src="" alt="" class="car_card-image">
-                        <h4 class="car_card-title"></h4>
-                        <p class="car_card-descr"></p>
+                <div class="cars_container">
+                    <div class="cars_block">
+                        <h2 class="cars_title">Наши автомобили</h2>
+                        <div class="cars_container_one">
+                            <div class="car_card">
+                                <img src="/img/car-small-1.png" alt="" class="car_card-image">
+                                <h4 class="car_card-title">Газель удлиненная</h4>
+                                <p class="car_card-descr">до 2,5 тонн, 4 куб дров</p>
+                            </div>
+                            <div class="car_card">
+                                <img src="/img/car-small-2.png" alt="" class="car_card-image">
+                                <h4 class="car_card-title">Зил-бычок, самосвал</h4>
+                                <p class="car_card-descr">до 5 тонн, 6 куб дров</p>
+                            </div>
+                            <div class="car_card">
+                                <img src="/img/car-small-3.png" alt="" class="car_card-image">
+                                <h4 class="car_card-title">Валдай, самосвал</h4>
+                                <p class="car_card-descr">до 5 тонн, 6 куб дров</p>
+                            </div>
+                        </div>
+                        <div class="cars_container_two">
+                            <div class="car_card">
+                                <img src="/img/car-big-1.png" alt="" class="car_card-image">
+                                <h4 class="car_card-title">Перегружать леса ЕК-18</h4>
+                                <p class="car_card-descr">с грейферным захватом для леса</p>
+                            </div>
+                            <div class="car_card">
+                                <img src="/img/car-big-2.png" alt="" class="car_card-image">
+                                <h4 class="car_card-title">Погрузчик ХТЗ Т-150</h4>
+                                <p class="car_card-descr">с ковшом и вилами для леса</p>
+                            </div>
+                        </div>
+                        <div class="additionally_container">
+                            <div class="additionally_left">
+                                <p class="additionally_text">
+                                    Дополнительно, возможно привлечение другой, специализированной техники с
+                                    грузоподъемностью от 2 до 20 тонн для доставки дров, пиломатериала, опила
+                                    и другой нашей продукции.
+                                </p>
+                                <div class="firewood-left-button_container cars-left-button_container">
+                                    <button class="firewood-left-button">Рассчитать стоимость</button>
+                                    <img src="/img/firewood-left-img.svg" alt="" class="firewood-left-img">
+                                </div>
+                            </div>
+                            <div class="additionally_right">
+                                <img src="/img/additionally.png" alt="" class="additionally-image">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="cars_container_two">
-                    <div class="car_card">
-                        <img src="" alt="" class="car_card-image">
-                        <h4 class="car_card-title"></h4>
-                        <p class="car_card-descr"></p>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="wrapper">
+                <div class="questions_container">
+                    <div class="clients-title-container">
+                        <h2 class="clients_title">
+                            Почему нас выбрали уже <span class="clients_title-green">47364</span> клиента?
+                        </h2>
+                        <div class="prise_mobil_container">
+                            <p class="prise_mobil_text">
+                                Листай вправо / влево
+                            </p>
+                            <div class="prise_mobil_block">
+                                <img src="/img/prise-mobil-1.svg" alt="" class="clients_mobil_img-one">
+                                <div class="prise_mobil_position"></div>
+                                <div class="prise_mobil_position"></div>
+                                <div class="prise_mobil_position"></div>
+                                <div class="prise_mobil_position"></div>
+                                <div class="prise_mobil_position"></div>
+                                <div class="prise_mobil_position"></div>
+                                <div class="prise_mobil_position"></div>
+                                <div class="prise_mobil_position"></div>
+                                <div class="prise_mobil_position"></div>
+                                <img src="/img/prise-mobil-2.svg" alt="" class="clients_mobil_img-two">
+                            </div>
+                        </div>
                     </div>
-                    <div class="car_card">
-                        <img src="" alt="" class="car_card-image">
-                        <h4 class="car_card-title"></h4>
-                        <p class="car_card-descr"></p>
+                    <div class="clients_block">
+                        <div class="clients_block-big">
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-1.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Честный объём.</h3>
+                                <p class="clients_card-descr">
+                                    Вы получите дрова, а не воздух потому что мы укладываем дрова в машины
+                                    рядами, а не валом. Никаких пустот и "колодцев" посередине машины, без
+                                    обмана. Продаем в складочных кубометрах, укладка средняя, не сильно плотная.
+                                </p>
+                            </div>
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-2.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Доставка и разгрузка без доплаты. </h3>
+                                <p class="clients_card-descr">
+                                    Мы доставим и разгрузим Вам дрова по Тюмени и в прилегающие районы, поселки 
+                                    и садовые общества. До 15 км от Тюмени при заказе от 3 кубов и более. Каждый 
+                                    последующий километр - 50 р/км. Территория доставки без доплаты.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clients_block-small">
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-3.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Низкие цены.</h3>
+                                <p class="clients_card-descr">
+                                    У нас дешевле, чем у частников на обочине. В среднем на 310 руб за куб (ноябрь 2022).
+                                </p>
+                            </div>
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-4.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Доставка в удаленные районы.</h3>
+                                <p class="clients_card-descr">
+                                    Мы доставляем дрова в удаленные от Тюмени районы, более 100 км. Звоните.
+                                </p>
+                            </div>
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-5.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Заготовка дров спец. длины</h3>
+                                <p class="clients_card-descr">
+                                    Для Вас мы можем заготовить дрова специальной длины, например 20-30 см.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clients_block-big">
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-6.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Удобная схема заказа. Оплата после доставки.</h3>
+                                <p class="clients_card-descr">
+                                    Вам не нужно никуда ехать, не нужно искать дрова на обочинах Тюмени. Заказ 
+                                    дров производится по телефону 60-66-98 или на <a href="" class="clients_link">этом сайте</a>. 
+                                    Оплата после получения. 
+                                    Возможен самовывоз.
+                                </p>
+                            </div>
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-7.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Работаем в выходные дни.</h3>
+                                <p class="clients_card-descr">
+                                    Специально для дачников и работающих в будни клиентов мы поменяли график 
+                                    работы, теперь мы работаем без выходных, семь дней в неделю, отдыхаем только 
+                                    на новый год, 5 дней. Часто мы идём на встречу клиентам и доставляем дрова в 
+                                    будни до 21:00.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clients_block-small">
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-8.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Укладка дров.</h3>
+                                <p class="clients_card-descr">
+                                    Мы экономим Ваше время, делая укладку дров в поленницу, быстро и аккуратно. 
+                                    1 куб - 1 000 рублей.
+                                </p>
+                            </div>
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-9.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Предоставим документы</h3>
+                                <p class="clients_card-descr">
+                                    Vы предоставим Вам товарный чек для отчета или получения помощи от государства 
+                                    в виде субсидий на дрова.
+                                </p>
+                            </div>
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-10.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">98,7% покупателей нами довольны</h3>
+                                <p class="clients_card-descr">
+                                    Мы не идеальны, но мы стараемся чтобы Вы остались довольны нашими услугами.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clients_block-big">
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-11.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Хорошее качество древесины.</h3>
+                                <p class="clients_card-descr">
+                                    Мы заготавливаем дрова из свежей древесины. Никаких отходов, вторичного 
+                                    сырья или горельника. Минимальное количество гнили и трухи. Можно заказать 
+                                    ручную сортировку дров, 100% без гнили.
+                                </p>
+                            </div>
+                            <div class="clients_card">
+                                <div class="clients_card-image-container">
+                                    <img src="/img/clients-12.svg" alt="" class="clients_card-image">
+                                </div>
+                                <h3 class="clients_card-title">Длина полена 40см, колка средняя.</h3>
+                                <p class="clients_card-descr">
+                                    Чтобы вы не переплачивали за спец. размер - мы изменили стандарт длины. 
+                                    Теперь длина полена ~40см (+-3см), колка средняя.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="process">
+            <div class="wrapper">
+                <div class="questions_container">
+                    <h2 class="work_title">Отзывы. Наши клиенты про нас.</h2>
+                    <h3 class="work_video_title">Видео отзывы</h3>
+                    <div class="work_video_container">
+                        <div class="work_video_block">
+                            <a href="" class="work_video_link">
+                                <img src="/img/process-big-1.png" alt="" class="work_video_image">
+                            </a>
+                        </div>
+                        <div class="work_video_block">
+                            <a href="" class="work_video_link">
+                                <img src="/img/process-big-2.png" alt="" class="work_video_image">
+                            </a>
+                        </div>
+                        <div class="work_video_block">
+                            <a href="" class="work_video_link">
+                                <img src="/img/process-big-3.png" alt="" class="work_video_image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work_gallery work_gallery-customer">
+                        <h3 class="work_video_title">Фотографии</h3>
+                        <div class="work_gallery-container"> 
+                            <img src="/img/process-small-1.png" alt="" class="work_gallery-element">
+                            <img src="/img/process-small-2.png" alt="" class="work_gallery-element">
+                            <img src="/img/process-small-3.png" alt="" class="work_gallery-element">
+                            <img src="/img/process-small-4.png" alt="" class="work_gallery-element">
+                        </div>
+                        <img src="/img/work-button-left.svg" alt="" class="work_gallery_button-left">
+                        <img src="/img/wor-button-right.svg" alt="" class="work_gallery_button-right">
+                    </div>
+                    <div class="process-block">
+                        <div class="process-element">
+                            <h4 class="process-title">Реальные отзывы в соц. сетях</h4>
+                            <div class="process_switch">
+                                <img src="/img/switch-right.svg" alt="" class="process_switch-right">
+                                <div class="switch_block"></div>
+                                <div class="switch_block"></div>
+                                <div class="switch_block"></div>
+                                <div class="switch_block"></div>
+                                <div class="switch_block"></div>
+                                <div class="switch_block"></div>
+                                <img src="/img/switch-left.svg" alt="" class="process_switch-left">
+                            </div>
+                        </div>
+                        <div class="process-element-center">
+                            <p class="process_text">
+                                Решил написать небольшой отзыв о фирме "Дрова72".С февраля 2016г. года покупаю 
+                                дрова только у данного поставщика. За это время было выполнено 8 заказов из них 
+                                6 на березовые дрова в общем объеме 36 кубов и 2 на срезку.Объем и цена всегда 
+                                соответствовали заказу. Доставка в назначенное время. Один раз была задержка на 2 
+                                часа, перезвонили, извинились. Это подтверждает, что фирма ценит своих клиентов.Кому 
+                                нужны дрова в заявленном объеме и без лишних проблем, рекомендую "Дрова72" как надежного 
+                                поставщика.
+                            </p>
+                        </div>
+                        <div class="process-element">
+                            <a href="" class="process-link">ПРОВЕРИТЬ ОТЗЫВ</a>
+                            <button class="process-button">Смотреть все отзывы в VK</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section class="sities">
+            <div class="wrapper">
+                <div class="questions_container">
+                    <h4 class="process-title">Отзывы на независимых площадках</h4>
+                    <div class="sities_block">
+                        <img src="/img/sities-1.svg" alt="yandex">
+                        <img src="/img/sities-2.svg" alt="avito">
+                        <img src="/img/sities-3.svg" alt="2gis">
+                        <img src="/img/sities-4.svg" alt="google">
+                        <img src="/img/sities-5.svg" alt="lamp">
+                    </div>
+                    <div class="sities_block-two">
+                        <div class="sities_block-two_info">
+                            <div class="sities_info">
+                                <h4 class="process-title">СМИ о нас</h4>
+                                <p class="process_text">
+                                    Растём и развиваемся. В 2014 году к нам приезжал канал "СТС-Ладья" 
+                                    узнать цены на дрова для телепередачи "Точнее".
+                                </p>
+                            </div>
+                            <div class="sities_info sities_info-custom">
+                                <h4 class="process-title">Мошенники!</h4>
+                                <p class="process_text">
+                                    Внимание, мошенники предлагают товар от нашего имени с большой скидкой, 
+                                    с условием 100% предоплаты на карту. <a href="" class="clients_link">Подробнее в группе</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sities_block-two_video">
+                            <a href="">
+                                <img src="/img/sities-video.png" alt="video" class="sities_image-mobil">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="wrapper">
+                <div class="questions_container">
+                    <h2 class="work_title">Ответы на вопросы</h2>
+                    <div class="questions_block">
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Какой длины дрова, как колем?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>  
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Можем напилить дрова покороче: 20-35 см?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Как укладываем дрова в машину и как считаем объём? ГОСТ, ТУ, стандарты.
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Делаем ли мы укладку дров в поленницу?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    В каких единицах измерения продаем дрова?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Какие дрова: сырые, подсушенные, сухие, какое качество?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Какими автомобилями доставляем дрова?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Как проверить объём? Точно ли там заявленный объём?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Как проверить дрова перед покупкой? Хочу посмотреть на дрова.
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Доставка и разгрузка дров бесплатная? Как разгружаете дрова?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Сколько весит 1 складочный куб березовых дров?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Газель удлинённая может увезти 6 кубов дров?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Подробнее про гарантию
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Как выглядят подарочные сетки с растопкой? Какой размер/объём сетки? 
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                        <div class="questions_card">
+                            <div class="questions_card-block">
+                                <p class="question_text">
+                                    Как быстро привёзете дрова? Какой срок доставки?
+                                </p>
+                                <img src="/img/question.svg" alt="" class="questions_click">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="wrapper">
+                <div class="questions_container">
+                    <div class="contacts_title_container">
+                        <h2 class="work_title work_title-contacts">Контактная информация</h2>
+                    </div>
+                    <div class="contacts_container">
+                        <div class="contacts-block-left">
+                            <div class="contacts-block">
+                                <p class="contacts-block-left-descr">Консультации и заказ:</p>
+                                <p class="contacts-block-left-descr">
+                                    <a href="tel:+79292696698" class="contacts_link">+7-929-269-6698</a> или <a href="tel:83452606698" class="contacts_link">8 (3452) 60-66-98</a>
+                                </p>
+                            </div>
+                            <div class="contacts-block">
+                                <p class="contacts-block-left-descr">Наши мессенджеры:</p>
+                                <div class="header__social_network-block header__social_network-block-custom">
+                                    <a href="!#" class="social_network-block-link">
+                                        <img src="/img/header-social-1.svg" alt="viber" class="social_network-block-image">
+                                    </a>
+                                    <a href="!#" class="social_network-block-link">
+                                        <img src="/img/header-social-2.svg" alt="whatsapp" class="social_network-block-image">
+                                    </a>
+                                    <a href="!#" class="social_network-block-link">
+                                        <img src="/img/header-social-3.svg" alt="telegram" class="social_network-block-image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contacts-block">
+                                <p class="contacts-block-left-descr">E-mail</p>
+                                <a href="mailto:123@drova72.ru" class="contacts_link">123@drova72.ru (общий)</a>
+                            </div>
+                            <div class="contacts-block">
+                                <p class="contacts-block-left-descr">Сайты</p>
+                                <p class="contacts-block-left-descr">
+                                    <a href="https://drova72.ru/" class="contacts_link">drova72.ru</a> или <a href="https://drova72.ru/" class="contacts_link">дрова72.рф</a>
+                                </p>
+                            </div>
+                            <div class="contacts-block">
+                                <p class="contacts-block-left-descr">Мы в соц.сетях</p>
+                                <div class="header__social_network-block header__social_network-block-custom">
+                                    <a href="!#" class="social_network-block-link">
+                                        <img src="/img/vk.svg" alt="vk" class="social_network-block-image">
+                                    </a>
+                                    <a href="!#" class="social_network-block-link">
+                                        <img src="/img/ok.svg" alt="ok" class="social_network-block-image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contacts-block">
+                                <p class="contacts-block-left-descr contacts-block-left-descr-custom">Сотрудничество с юридическими лицами</p>
+                                <button class="contacts_button">Подробнее</button>
+                            </div>
+                            <div class="contacts-block contacts-block-custom">
+                                <p class="contacts-block-left-descr contacts-block-left-descr-custom">Написать обращение/заявление по выполненному заказу</p>
+                                <button class="contacts_button">Написать</button>
+                            </div>
+                            <h4 class="process-title process-title-custom">
+                                Перед поездкой к нам - обязательно позвоните, чтобы мы смогли Вас встретить.
+                            </h4>
+                        </div>
+                        <div class="contacts-block-right">
+                            <div class="contacts-block-right-title_container">
+                                <h4 class="process-title">График работы</h4>
+                            </div>
+                            <div class="contacts_block-right-container">
+                                <p class="contacts-block-right-descr">
+                                    Приём заказов: <span class="contacts-span">с 9.00 до 20.00, на сайте - круглосуточно.</span>
+                                </p>
+                                <p class="contacts-block-right-descr">
+                                    Доставка: <span class="contacts-span">с 9.00 до 19.00</span>
+                                </p>
+                                <p class="contacts-block-right-descr">
+                                    Самовывоз: <span class="contacts-span">с 9.00 до 17.00</span>
+                                </p>
+                            </div>
+                            <div class="contacts-block-right-title_container">
+                                <h4 class="process-title">Как нас найти?</h4>
+                            </div>
+                            <div class="contacts_block-right-container">
+                                <p class="contacts-block-right-descr">
+                                    Наша база и офис находятся по адресу:
+                                </p>
+                                <p class="contacts-block-right-descr">
+                                    в яндексе <a href="https://yandex.ru/maps/org/drova72_ru/1714954476/?ll=65.605827%2C57.191014&z=13" class="contacts-span">ул. Тимофея Чаркова, дом 8 Б/7 (восемь бэ дробь семь).</a>
+                                </p>
+                                <p class="contacts-block-right-descr">
+                                    в 2ГИС <a href="https://2gis.ru/tyumen/firm/1830115630187935?m=65.6058%2C57.1907%2F16" class="contacts-span">ул. Тимофея Чаркова, дом 8Б/7 Более точный адрес в 2ГИС.</a>
+                                </p>
+                            </div>.
+                            <div class="contacts-block-right-descr-container">
+                                <p class="contacts-block-right-descr">
+                                    В сторону бывшего миграционного центра, заезд с Тимофея Чаркова. Проезжаете 
+                                    мимо бывшего миграционного центра до конца улицы, держитесь правее. Когда 
+                                    "упрётесь" в КПП (ворота) - объясните охраннику что вы за дровами. Далее 
+                                    поварачиваем налево, а затем, через 30 метров - направо и прямо до большого, 
+                                    желтого баннера "ДРОВА".
+                                </p>
+                            </div>
+                            <div class="contacts-block-right-buttons">
+                                <button class="contacts-button-right">Яндекс Навигатор</button>
+                                <button class="contacts-button-right contacts-button-right_color">2ГИС Навигатор</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts_img_container">
+                        <div class="contacts_image-container">
+                            <img src="/img/con-1.png" alt="" class="contacts_image-one">
+                            <a href="">
+                                <img src="/img/con-2.png" alt="" class="contacts_image-two">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer_container">
+                <p class="footer-text">
+                    Не является публичной офертой. Актуальную информацию уточняйте по телефону или 
+                    по электронной почте в разделе "Контакты".
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
