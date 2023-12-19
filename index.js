@@ -98,7 +98,7 @@ $(window).resize(function() {
         $('.districts_card-button-custom').text('Велижанский тракт');
         $('.work_title-contacts').text('Контакты');
     } else {
-        $('.districts_card-button').text('Велижанский тракт 17 км');
+        $('.districts_card-button-custom').text('Велижанский тракт 17 км');
         $('.work_title-contacts').text('Контактная информация');
     }
 }).resize();

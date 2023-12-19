@@ -9,6 +9,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="/custom-slick-theme.css">
 </head>
 <body>
     <header>
@@ -151,14 +152,16 @@
                         Более 800 отзывов на 2Гис, Фламп, Яндекс, Гугл, Авито
                     </h3>
                     <div class="reviews_info-block">
-                        <div class="reviews_info-stars">
-                            <a href="" class="reviews_info-link">Смотреть отзывы</a>
-                            <div class="reviews_info-star_container">
-                                <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
-                                <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
-                                <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
-                                <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
-                                <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
+                        <div class="reviews_info-stars-mobil">
+                            <div class="reviews_info-stars">
+                                <a href="" class="reviews_info-link">Смотреть отзывы</a>
+                                <div class="reviews_info-star_container">
+                                    <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
+                                    <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
+                                    <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
+                                    <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
+                                    <img src="/img/white-star.svg" alt="star" class="reviews_star-image">
+                                </div>
                             </div>
                         </div>
                         <div class="reviews_info-cards">
@@ -234,9 +237,11 @@
                 <div class="questions_container">
                     <h2 class="prise-title">Цены на дрова</h2>
                     <div class="prise_mobil_container">
-                        <p class="prise_mobil_text">
-                            Листай вправо / влево
-                        </p>
+                        <div class="prise_mobil_container-text">
+                            <p class="prise_mobil_text">
+                                Листай вправо / влево
+                            </p>
+                        </div>
                         <div class="prise_mobil_block">
                             <img src="/img/prise-mobil-1.svg" alt="" class="prise_mobil_img-one">
                             <div class="prise_mobil_position"></div>
@@ -532,8 +537,10 @@
                             <img src="/img/work-galery-3.png" alt="" class="work_gallery-element">
                             <img src="/img/work-galery-4.png" alt="" class="work_gallery-element">
                         </div>
-                        <img src="/img/work-button-left.svg" alt="" class="work_gallery_button-left">
-                        <img src="/img/wor-button-right.svg" alt="" class="work_gallery_button-right">
+                        <div class="work_gallery_button-comtainer">
+                            <img src="/img/work-button-left.svg" alt="" class="work_gallery_button-left">
+                            <img src="/img/wor-button-right.svg" alt="" class="work_gallery_button-right">
+                        </div>
                     </div>  
                 </div>
             </div>
@@ -621,17 +628,17 @@
                     <div class="cars_block">
                         <h2 class="cars_title">Наши автомобили</h2>
                         <div class="cars_container_one">
-                            <div class="car_card">
+                            <div class="car_card car_card-custom">
                                 <img src="/img/car-small-1.png" alt="" class="car_card-image">
                                 <h4 class="car_card-title">Газель удлиненная</h4>
                                 <p class="car_card-descr">до 2,5 тонн, 4 куб дров</p>
                             </div>
-                            <div class="car_card">
+                            <div class="car_card car_card-custom">
                                 <img src="/img/car-small-2.png" alt="" class="car_card-image">
                                 <h4 class="car_card-title">Зил-бычок, самосвал</h4>
                                 <p class="car_card-descr">до 5 тонн, 6 куб дров</p>
                             </div>
-                            <div class="car_card">
+                            <div class="car_card car_card-custom">
                                 <img src="/img/car-small-3.png" alt="" class="car_card-image">
                                 <h4 class="car_card-title">Валдай, самосвал</h4>
                                 <p class="car_card-descr">до 5 тонн, 6 куб дров</p>
@@ -644,19 +651,19 @@
                                 <p class="car_card-descr">с грейферным захватом для леса</p>
                             </div>
                             <div class="car_card">
-                                <img src="/img/car-big-2.png" alt="" class="car_card-image car_card-image-custom">
+                                <img src="/img/car-big-2.png" alt="" class="car_card-image">
                                 <h4 class="car_card-title">Погрузчик ХТЗ Т-150</h4>
                                 <p class="car_card-descr">с ковшом и вилами для леса</p>
                             </div>
                         </div>
                         <div class="additionally_container">
                             <div class="additionally_left">
-                                <p class="additionally_text">
-                                    Дополнительно, возможно привлечение другой, специализированной техники с
-                                    грузоподъемностью от 2 до 20 тонн для доставки дров, пиломатериала, опила
-                                    и другой нашей продукции.
-                                </p>
-                                <div class="firewood-left-button_container cars-left-button_container">
+                                    <p class="additionally_text">
+                                        Дополнительно, возможно привлечение другой, специализированной техники с
+                                        грузоподъемностью от 2 до 20 тонн для доставки дров, пиломатериала, опила
+                                        и другой нашей продукции.
+                                    </p>
+                                <div class="firewood-left-button_container">
                                     <button class="firewood-left-button">Рассчитать стоимость</button>
                                     <img src="/img/firewood-left-img.svg" alt="" class="firewood-left-img">
                                 </div>

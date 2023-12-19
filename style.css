@@ -42,21 +42,21 @@ table {
 	border-spacing: 0;
 }
 
-/* roboto-regular - latin */
+
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto';
+    font-display: swap;
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/fonts/Gilroy-Regular.woff2') format('woff2'); 
   }
-  /* roboto-700 - latin */
+
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto';
+    font-display: swap; 
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('/fonts/Gilroy-Bold.woff2') format('woff2'); 
   }
 
 html {
@@ -73,7 +73,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -176,14 +176,22 @@ body {
 
 /* header end */
 
-/* main start */
-
 /* firewood start */
 
 .firewood {
     position: relative;
     background: url(/img/firewood-bg.png) no-repeat center center / cover;
     height: 721px; /* Высота для первого изображения */
+}
+
+.firewood::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
 }
 
 .firewood::after {
@@ -197,9 +205,20 @@ body {
     background: url(/img/firewood-bg-2.png) no-repeat center center / cover;
 }
 
+.firewood::after::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
 .firewood_container {
     display: flex;
     margin: 0 120px;
+    position: relative;
 }
 
 .firewood-left {
@@ -281,10 +300,6 @@ body {
 
 /* advantages start */
 
-.calculator {
-    margin-bottom: 110px;
-}
-
 .advantages_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -356,6 +371,14 @@ body {
 /* reviews end */
 
 /* calculator start */
+
+.questions_container {
+    margin: 0 120px;
+}
+
+.calculator {
+    margin-bottom: 110px;
+}
 
 .calculator_title {
     font-size: 40px;
@@ -502,6 +525,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .card_settings {
@@ -560,6 +584,10 @@ body {
     border-radius: 5px;
     background: #584340;
     margin-bottom: 19px;
+}
+
+.card_image {
+    width: 100%;
 }
 
 /* prise end */
@@ -732,6 +760,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    margin-bottom: 69px;
 }
 
 .car_card-title {
@@ -755,10 +784,6 @@ body {
     line-height: 65px; /* 162.5% */
 }
 
-/* cars end */
-
-/* additionally start */
-
 .additionally_container {
     margin: 0 120px;
     display: flex;
@@ -775,7 +800,7 @@ body {
     margin-bottom: 77px;
 }
 
-/* additionally end */
+/* cars end */
 
 /* clients start */
 
@@ -787,6 +812,8 @@ body {
     height: 105px;
     border-radius: 900px;
     background: #44A603;
+    position: relative;
+    bottom: 100px;
 }
 
 .clients_block-big {
@@ -839,6 +866,8 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 35px; /* 175% */
+    position: relative;
+    bottom: 30px;
 }
 
 .clients_card-descr {
@@ -1145,12 +1174,8 @@ footer {
 
 /* footer end */
 
-/* main end */
-
-/* media start */
 
 @media (max-width: 750px) {
-
     /* header start */
 
     .header_time-block-custom {
@@ -1188,10 +1213,15 @@ footer {
 
     /* header end */
 
-    /* firewood start */
+     /* firewood start */
 
     .firewood {
-        height: 850px; /* Высота для первого изображения */
+        height: 850px; 
+    }
+
+    .firewood_container {
+        margin-left: 10px;
+        margin-right: 0;
     }
 
     .firewood::after {
@@ -1205,13 +1235,11 @@ footer {
     }
 
     .firewood-left-title {
-        max-width: 355px;
         font-size: 30px;
         line-height: 45px; 
     }
 
     .firewood_container {
-        margin: 0 10px;
         display: inline-flex;
         flex-direction: column;
     }
@@ -1247,13 +1275,13 @@ footer {
         padding-top: 27px;
     }
 
-
     /* firewood end */
 
-    /* advantages start */
+     /* advantages start */
 
-    .advantages_container {
+     .advantages_container {
         grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
     }
 
     /* advantages end */
@@ -1275,6 +1303,11 @@ footer {
         align-items: center;
         padding-left: 0;
         margin-bottom: 42px;
+    }
+
+    .reviews_info-stars-mobil {
+        display: flex;
+        justify-content: center;
     }
 
     .reviews-container {
@@ -1320,13 +1353,14 @@ footer {
 
     /* prise start */
 
-   .card_image {
-        width: 297px;
-   }
+    .prise {
+        margin-bottom: 80px;
+    }
 
-   .prise_card {
-        height: 544px;
-   }
+    .prise_mobil_container-text {
+        display: flex;
+        justify-content: center;
+    }
 
     .prise_mobil_container {
         display: inline-flex;
@@ -1357,10 +1391,11 @@ footer {
 
     /* about start */
 
-    .about-container {
+     .about-container {
         display: inline-flex;
         flex-direction: column;
-        margin: 0 10px;
+        margin-left: 10px;
+        margin-right: 0;
     }
 
     .about-title {
@@ -1388,21 +1423,21 @@ footer {
         justify-content: center;
     }
 
-    .work_gallery {
-        width: 365px;
-        height: 210px;
+    .work_gallery_button-comtainer {
+        display: flex;
+        gap: 80px;
     }
 
     .work_gallery_button-right {
-        left: 255px;
-        bottom: 160px;
+        left: 245px;
+        bottom: 150px;
         width: 30px;
         height: 30px;
     }
 
     .work_gallery_button-left {
-        left: 15px;
-        bottom: 160px;
+        left: 10px;
+        bottom: 150px;
         width: 30px;
         height: 30px;
        
@@ -1424,6 +1459,7 @@ footer {
 
     .work_gallery {
         margin-top: 40px;
+        width: 100%;
     }
 
     .work_video_title {
@@ -1437,7 +1473,8 @@ footer {
     .free-container {
         display: inline-flex;
         flex-direction: column;
-        margin: 0 10px;
+        margin-left: 10px;
+        margin-right: 0;
     }
 
     .free-title {
@@ -1505,21 +1542,25 @@ footer {
 
     /* cars start */
 
-    .cars_container_one, .cars_block, .cars_container_two {
-        display: inline-flex;
-        flex-direction: column;
+    .cars_block {
+        margin-bottom: 0;
+    }
+
+    .cars_container_one{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
     }
 
     .cars_container_two {
-        margin: 0 17px;
-        display: inline-block;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 0;
     }
 
     .cars_container {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     .car_card-image  {
@@ -1529,7 +1570,7 @@ footer {
 
     .cars {
         background: #584340;
-        margin-bottom: 80px;
+        margin-bottom: 160px;
     }
 
     .car_card-descr {
@@ -1540,21 +1581,20 @@ footer {
         color: #FFF;
         font-size: 30px;
         padding-top: 80px;
-        text-align: center;
+        text-align: start;
+        margin: 0 10px;
     }
-
-    /* cars end */
-
-    /* additionally start */
 
     .additionally_container {
         display: inline-flex;
         flex-direction: column;
-        margin: 0 10px;
+        margin-left: 10px;
+        margin-right: 0;
+        gap: 0;
+        margin-bottom: 0;
     }
 
     .additionally-image {
-        width: 100%;
         height: 180px;
     }
 
@@ -1571,40 +1611,9 @@ footer {
         align-items: center;
     }
 
-    /* additionally end */
-
-    /* process start */
-
-    .work_gallery-customer {
-        margin-bottom: 120px;
-    }
-
-    .process-element {
-        display: inline-flex;
-        flex-direction: column;
-    }
-
-    .process_text {
-        font-size: 14px;
-    }
-
-    .cars-left-button_container {
-        margin-left: 50px;
-    }
-
-    .process-element-center {
-        margin-bottom: 40px;
-    }
-
-    .process-link {
-        margin-bottom: 20px;
-    }
-
-    /* process end */
+    /* cars end */
 
     /* clients start */
-
-    
 
     .clients_title, .clients_title-green {
         font-size: 30px;
@@ -1648,8 +1657,10 @@ footer {
         margin-bottom: 0;
     }
 
-
     /* clients end */
+
+    /* process start */
+    /* process end */
 
     /*questions start */
 
@@ -1710,6 +1721,7 @@ footer {
         justify-content: center;
     }
 
+
     /* contacts end */
 
     /* footer start */
@@ -1729,4 +1741,6 @@ footer {
         width: 353px;
     }
 
+    
+    
 }
